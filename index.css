@@ -1,0 +1,367 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  *{
+    margin:0px;
+    gap:0px
+    
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+.section1{
+    
+   
+    height: 450px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+    
+    
+}
+.Modéle{
+   
+    padding-left: 40px;
+    padding-top: 150px;
+    
+}
+.Modéle img{
+    
+    height:450px;
+    border-radius: 40px;
+    -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+}
+.Description{
+    text-align: center;
+    text-align: justify;
+    margin: 50px;
+    font-style:oblique;
+}
+.Description h2{
+    font-size:50px ;
+    text-align: center;
+    font-family: Arial Black;
+    text-shadow: 2px 2px 8px gray;
+    color:rgba(128, 128, 128, 0.795);
+    
+}
+.Description p{
+    font-size:15px;
+    color: black;
+}
+.information{
+    padding:80px;
+    font-style: italic;
+
+
+}
+.information1{
+    font-size:30px ;
+    text-align: center;
+    font-family: Arial Black;
+    text-shadow: 2px 2px 8px gray;
+    color:rgba(128, 128, 128, 0.795);
+    animation: colorChange 1s infinite alternate;
+}
+@keyframes colorChange {
+    0% { color: rgba(128, 128, 128, 0.795); } /* Gris */
+    70% { color: #d2871e; } /* Rouge vif */
+    25% { color: rgba(128, 34, 107, 0.795); } /* Bleu */
+    
+    
+}
+.information2{
+    font-size:20px ;
+    font-family: Arial Black;
+    text-shadow: 2px 2px 8px gray;
+    color:rgba(128, 128, 128, 0.795);
+    text-align: center;
+    animation: colorChange 1s infinite alternate;
+    
+    
+}
+
+.categorie1{
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap:150px;   
+}
+.image1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; /* Assure un cercle parfait */
+    border: 2px ;
+    -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+
+}
+.utilisation1 h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+    color: grey;
+    font-style: italic;
+    
+    
+    
+}
+.utilisation1 p span{
+    color:#d2871e;
+}
+.utilisation1 p{
+    font-size: 20px;
+}
+
+
+/* Carrousel d'images */
+.categorie2{
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap:100px;  
+}
+.image2 {
+    
+    display: flex;
+    overflow: hidden;
+    
+    
+    
+
+}
+.utilisation2 h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+    color: grey;
+    font-style: italic;
+    
+    
+    
+}
+.utilisation2 p span{
+    color:#d2871e;
+}
+.utilisation2 p{
+    font-size: 20px;
+}
+
+.image2 img {
+    
+    object-fit: cover;
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+    -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    
+}
+
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(-300%); }
+}
+
+.image2 img:nth-child(1) {
+    animation: carousel 6s infinite;
+}
+
+.image2 img:nth-child(2) {
+    animation: carousel 6s infinite 2s; /* Démarre après 2 secondes */
+}
+
+.image2 img:nth-child(3) {
+    animation: carousel 6s infinite 4s; /* Démarre après 4 secondes */
+}
+.categorie3{
+    height: 300px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 50px;
+    gap:50px;
+    margin-bottom: 200px;
+    
+
+}
+.image3 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%; /* Assure un cercle parfait */
+    border: 2px ;
+    -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+
+}
+/* categorie 3 */
+.categorie3{
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 150px;   
+    margin: 50px 0; /* Ajoute une marge verticale uniforme */
+} 
+
+.image3 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; /* Assure un cercle parfait */
+    border: 2px ;
+    -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+
+}
+.utilisation3 h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+    color: grey;
+    font-style: italic;
+    
+    
+    
+}
+.utilisation3 p span{
+    color:#d2871e;
+}
+.utilisation3 p{
+    font-size: 20px;
+    margin: 0; /* Assurez-vous qu'il n'y a pas de marge */
+}
+/* categorie 4 */
+.categorie4{
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 150px; 
+    margin: 0; /* Supprime la marge pour éviter l'espace vide */
+    
+}
+.image4 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; /* Assure un cercle parfait */
+    border: 2px ;
+    -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
+
+}
+.utilisation4 h2{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Montserrat', sans-serif;
+    margin-top: 0; /* Supprime la marge supérieure pour éviter l'espace vide */
+    margin-bottom: 60px; /* Gardez la marge inférieure si nécessaire */
+    color: grey;
+    font-style: italic;
+    
+    
+}
+.utilisation4 p span{
+    color:#d2871e;
+}
+.utilisation4 p{
+    font-size: 20px;
+   
+}
