@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    height:110px;
+    background-color: rgb(219, 195, 169) ;
+    display: flex;
+   
+
+}
+
+.logo{
+    width: 150px;             
+    height: 400px;              
+    padding: 100px;                                        
+    margin-top: -220px;
+    margin-left: -90px;
+}
+.ven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    font-size: 30px;
+}
+.gon{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: -120px;
+    color: #d2871e;
+
+
+}
+.loun{
+    color: white;
+    padding: 25px;
+    display: flex;
+    font-size: 30px;
+    margin: 15px;
+    gap: 90px;
+    right: 0;
+    padding-right: 150px;
+    position: absolute; 
+    top: 0; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.mar{
+    color: #d2871e;
+    padding: 20px;
+    display: flex;
+    font-size: 45px;
+    padding-left: 150px;
+    gap: 100px;
+    left: 0;
+    position: absolute; 
+    top: 0; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.saf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 20px;
+    gap: 10px;
+}
+.V{
+    color: #d2871e;
+}
