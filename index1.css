@@ -1,0 +1,309 @@
+main {
+    display: flex;
+   
+   
+}
+.choisir-lunette{
+    font-size: 55px;
+    font-family: serif;
+    font-style: italic;
+    color: #d2871e;
+    text-align: center;
+    
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+h5 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Genre-choisie {
+    
+    width: 200px;
+    border: 2px solid black;
+    height: 290px;
+
+}
+
+.genre {
+    margin-left: auto; /* Aligner "Genre" à droite */
+    text-align: center; /* Centrer le texte "Genre" */
+    font-size: 30px;
+    color: #d2871e;
+    
+    
+    
+    
+}
+
+.question {
+    display: flex;
+    justify-content: flex-start; /* Aligner les options à gauche */
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: black;
+    
+}
+
+.question span {
+    margin-left: 10px;
+     /* Espacement entre le texte et la checkbox */
+}
+
+.question input[type="checkbox"] {
+    margin-right: 10px; /* Espacement entre la checkbox et le texte */
+    
+    
+}
+
+/* ///////////////////////////////////////////////////Form/////////////////////////////////////////// */
+.form-choisie {
+    
+    width: 200px;
+    height: 290px;
+    border: 2px solid black;
+    
+    
+}
+
+.form{
+    margin-left: auto; /* Aligner "Genre" à droite */
+    text-align: center; /* Centrer le texte "Genre" */
+    font-size: 30px;
+    color: #d2871e;
+    
+    
+    
+}
+
+.form-type {
+    display: flex;
+    justify-content: flex-start; /* Aligner les options à gauche */
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+    
+    
+}
+
+.form-type span {
+    display: block;
+    font-weight:550;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+.form-type input[type="checkbox"] {
+    margin-left: 10px; /* Espacement entre la checkbox et le texte */
+    
+    
+    
+}
+.form-choisie img{
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px
+    
+}
+.Matiere-choisie{
+    width: 200px;
+    border: 2px solid black;
+    height: 290px;
+
+}
+.matier{
+    margin-left: auto; /* Aligner "Genre" à droite */
+    text-align: center; /* Centrer le texte "Genre" */
+    font-size: 30px;
+    color: #d2871e;
+
+}
+.Matier{
+    display: flex;
+    justify-content: flex-start; /* Aligner les options à gauche */
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: black;
+
+}
+.Matier span {
+    margin-left: 10px;
+     /* Espacement entre le texte et la checkbox */
+}
+
+.Matier input[type="checkbox"] {
+    margin-right: 10px; /* Espacement entre la checkbox et le texte */
+    
+    
+}
+.verres-lunettes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+
+}
+/* //////////////////////////couleur////////////////////////////// */
+
+.Couleur-choisie,
+.paiement-choisi {
+    width: 200px;
+    border: 2px solid black;
+    height: 290px;
+}
+
+.couleur,
+.paiement {
+    margin-left: auto; /* Aligner "Couleur" à droite */
+    text-align: center; /* Centrer le texte "Couleur" */
+    font-size: 30px;
+    color: #d2871e;
+}
+
+.coleur-type,
+.paiement-type {
+    display: flex;
+    justify-content: flex-start; /* Aligner les options à gauche */
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.coleur-type span,
+.paiement-type span {
+    display: block;
+    font-weight: 550;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+.coleur-type input[type="checkbox"],
+.paiement-type input[type="checkbox"] {
+    margin-left: 10px; /* Espacement entre la checkbox et le texte */
+}
+
+.Couleur-choisie img,
+.paiement-type img {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.page2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;;
+}
+
+.Model {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lunette {
+    width: 30%;
+    height: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(219, 195, 169);
+}
+
+.lunetteModel {
+    text-align: center;
+}
+
+.lunette img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.lunette h6 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.lunette p {
+    font-size: 20px;
+    color:#d2871e;
+}
+
+.create-form-button {
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(219, 195, 169);
+    color: #d2871e;
+    border-color:#d2871e;
+    }
+/* /////////////////////////////////Nouveau/////////////////////////////////////////// */
+.nouveau {
+    position: absolute;
+    top: 10px; /* Ajustez la position selon vos besoins */
+    right: 10px; /* Positionné à droite */
+    background-color: rgba(255, 0, 0, 0.8); /* Couleur de fond rouge avec transparence */
+    color: white; /* Couleur du texte */
+    padding: 5px 10px; /* Espacement autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    font-weight: bold; /* Texte en gras */
+    font-size: 14px; /* Taille de la police */
+    animation: fadeIn 0.5s ease-in-out, pulse 1.5s infinite; /* Animation d'apparition et pulsation */
+}
+
+.lunetteModel {
+    position: relative; /* Nécessaire pour positionner l'étiquette */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Augmente légèrement la taille */
+    }
+}
+
+/* /////////////////////////////etoile//////////////////////////// */
+.stars {
+    display: flex;
+    justify-content: center; /* Centrer les étoiles */
+    margin-bottom: 10px; /* Espacement entre les étoiles et l'image */
+}
+
+.star {
+    font-size: 30px; /* Taille des étoiles */
+    color: grey; /* Couleur par défaut des étoiles */
+    cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+    transition: color 0.2s; /* Transition pour le changement de couleur */
+}
+
+.star:hover,
+.star.selected {
+    color: gold; /* Couleur des étoiles sélectionnées */
+}
+    
+   
