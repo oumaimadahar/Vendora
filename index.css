@@ -1,80 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   *{
     margin:0px;
     padding: 0px;
@@ -85,10 +8,78 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement */
+    align-items: center; 
+    justify-content: center; 
     min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
    
+}
+nav{
+    height:110px;
+    background-color: rgb(219, 195, 169) ;
+    display: flex;
+    width: 100%;
+   
+
+}
+
+.logo{
+    width: 160px;             
+    height: 300px;              
+    padding: 100px;                                        
+    margin-top: -175px;
+    margin-left: -90px;
+}
+.ven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    font-size: 30px;
+}
+.gon{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: -120px;
+    color: #d2871e;
+
+
+}
+.loun{
+    color: white;
+    padding: 25px;
+    display: flex;
+    font-size: 30px;
+    margin: 15px;
+    gap: 90px;
+    right: 0px;
+    padding-right: 80px;
+    position: absolute; 
+    top: 0px; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.loun p {
+    font-size: 20px;
+}
+
+.loun p:hover {
+    color: #d2871e;
+}
+
+
+h1{
+    color:black;
+    font-size:  40px;
+    font-family:serif;
+    margin-top: 30px;
+
+}
+.titre{
+    color: #d2871e;
 }
 .section1{
     
@@ -150,9 +141,9 @@ body{
     animation: colorChange 1s infinite alternate;
 }
 @keyframes colorChange {
-    0% { color: rgba(128, 128, 128, 0.795); } /* Gris */
-    70% { color: #d2871e; } /* Rouge vif */
-    25% { color: rgba(128, 34, 107, 0.795); } /* Bleu */
+    0% { color: rgba(128, 128, 128, 0.795); }
+    70% { color: #d2871e; } 
+    25% { color: rgba(128, 34, 107, 0.795); } 
     
     
 }
@@ -175,10 +166,10 @@ body{
     gap:150px;   
 }
 .image1 img{
-    height: 300px; /* Hauteur uniforme pour toutes les images */
-    width: 300px; /* Largeur uniforme pour toutes les images */
-    border-radius: 50%; /* Assure un cercle parfait */
-    border: 2px  ; /* Ajoutez une bordure si nécessaire */
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50%; 
+    border: 2px  ; 
     object-fit: cover;
     -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
@@ -189,12 +180,9 @@ body{
     text-align: center;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    margin: 20px 0; /* Ajustez cette valeur selon vos besoins */
+    margin: 20px 0; 
     color: grey;
-    font-style: italic;
-    
-    
-    
+    font-style: italic;        
 }
 .utilisation1 p span{
     color:#d2871e;
@@ -227,7 +215,7 @@ body{
     text-align: center;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    margin: 20px 0; /* Ajustez cette valeur selon vos besoins */
+    margin: 20px 0;
     color: grey;
     font-style: italic;
     
@@ -239,7 +227,7 @@ body{
 }
 .utilisation2 p{
     font-size: 20px;
-    text-align: justify; /* Justifier le texte */
+    text-align: justify; 
     margin: 0;
 }
 
@@ -284,10 +272,10 @@ body{
 
 }
 .image3 img{
-    height: 300px; /* Hauteur uniforme pour toutes les images */
-    width: 300px; /* Largeur uniforme pour toutes les images */
-    border-radius: 50%; /* Assure un cercle parfait */
-    border: 2px  ; /* Ajoutez une bordure si nécessaire */
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50%; 
+    border: 2px  ;
     box-shadow: 29px -15px 43px -6px rgba(0, 0, 0, 0.75);
     object-fit: cover;
     -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
@@ -302,7 +290,7 @@ body{
     align-items: center;
     display: flex;
     gap: 150px;   
-    margin: 50px 0; /* Ajoute une marge verticale uniforme */
+    margin: 50px 0; 
 } 
 
 .image3 img{
@@ -320,7 +308,7 @@ body{
     text-align: center;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    margin: 20px 0; /* Ajustez cette valeur selon vos besoins */
+    margin: 20px 0; 
     color: grey;
     font-style: italic;
     
@@ -332,7 +320,7 @@ body{
 }
 .utilisation3 p{
     font-size: 20px;
-    text-align: justify; /* Justifier le texte */
+    text-align: justify; 
     margin: 0;
 }
 /* categorie 4 */
@@ -346,10 +334,10 @@ body{
     
 }
 .image4 img{
-    height: 300px; /* Hauteur uniforme pour toutes les images */
-    width: 300px; /* Largeur uniforme pour toutes les images */
+    height: 300px; 
+    width: 300px; 
     border-radius: 50%; /* Assure un cercle parfait */
-    border: 2px ; /* Ajoutez une bordure si nécessaire */
+    border: 2px ; 
      object-fit: cover;
     -webkit-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 29px -15px 43px -6px rgba(0,0,0,0.75);
@@ -360,7 +348,7 @@ body{
     text-align: center;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    margin: 20px 0; /* Ajustez cette valeur selon vos besoins */
+    margin: 20px 0; 
     color: grey;
     font-style: italic;
     
@@ -371,7 +359,7 @@ body{
 }
 .utilisation4 p{
     font-size: 20px;
-    text-align: justify; /* Justifier le texte */
+    text-align: justify; 
     margin: 0;
    
 }
@@ -422,7 +410,7 @@ body{
    
 }
 .footer-contact img {
-    width: 20px; /* Ajustez la taille des logos selon vos besoins */
+    width: 20px; 
     margin-right: 5px;
     vertical-align: middle; /* Alignement vertical au centre par rapport au texte */
     padding-left: 15px;
