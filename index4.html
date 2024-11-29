@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendeur</title>
+    <link rel="stylesheet" href="index4.css">
+    
+</head>
+<body class="bac">
+    <section class="for">
+        <h1>Formulaire de commande</h1>
+    </section>
+    <div class="zin">
+        <p class="mar">Formulaire</p>
+        <form class="sana" onsubmit="validerChamps(event)">
+            <label for="nom">Nom et prénom</label>
+            <input type="text" id="nom" name="nom"/>
+
+            <label for="adresse">Adresse</label>
+            <input type="text" id="adresse" name="adresse" />
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" /> 
+
+            <label for="tele">telephonne</label>
+            <input id="tele"type="tel" name="N°Tele" />
+
+            <label for="codePostal">Code Postal</label>
+            <input id="codePostal" type="text" name="codePostal" />
+
+            <label for="quantite">Quantité:</label>
+            <input type="number" id="quantite" name="quantite" oninput="calculerTotal()" min="1" />
+
+            <!-- Prix unitaire -->
+            <input type="hidden" id="prixUnitaire" value="100">
+
+            <!-- Total -->
+            <label for="total">Total (Dh):</label>
+            <output  id="total" name="total" >0</output>
+
+            <input type="reset" value="Annuler" onclick="resetForm()">
+            <input type="submit" value="Passer la commande">
+            
+            <!-- Messages de succès et d'erreur -->
+            <div id="messageSuccess" class="message-success"></div>
+            <div id="messageError" class="message-error"></div>
+        </form>
+        
+        
+        <p id="successMessage" class="success-message" style="display: none;">Commande validée avec succès !</p>
+    </div>
+    <script src="formulaire.js"></script>
+</body>
+</html>

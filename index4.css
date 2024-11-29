@@ -1,0 +1,58 @@
+.for {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.bac {
+    background-color: #d2871e;
+}
+
+.zin {
+    max-width: 500px;
+    margin: 20px auto; /* Centrer le div et ajouter une marge */
+    padding: 50px;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    background-color: #cfb28a; 
+}
+
+.mar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    margin-top: 20px; /* Ajusté pour éviter le chevauchement */
+}
+
+.sana {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Augmenté pour un meilleur espacement */
+    font-weight: bold;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 5px; /* Ajouter un léger arrondi */
+    background-color: #d0922d; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #b0741e; /* Couleur de fond au survol */
+}
+.erreur-vert {
+    color: red;
+}
+.succes-message {
+    color: green;
+}
