@@ -36,27 +36,6 @@ function validerChamps(event) {
             estValide = false; // Marquer comme non valide
         }
 
-        // Validation spécifique pour le numéro de téléphone
-        if (champ.id === 'tele') {
-            if (!/^\d{10}$/.test(champ.value.trim())) {
-                const messageErreur = document.createElement('div');
-                messageErreur.className = 'erreur-message erreur-vert'; // Ajouter la classe pour afficher en rouge
-                messageErreur.innerText = 'Le numéro de téléphone doit contenir exactement 10 chiffres.';
-                champ.parentNode.insertBefore(messageErreur, champ.nextSibling);
-                estValide = false; // Marquer comme non valide
-            }
-        }
-
-        // Validation spécifique pour le code postal
-        if (champ.id === 'codePostal') {
-            if (!/^\d{5}$/.test(champ.value.trim())) {
-                const messageErreur = document.createElement('div');
-                messageErreur.className = 'erreur-message erreur-vert'; // Ajouter la classe pour afficher en rouge
-                messageErreur.innerText = 'Le code postal doit contenir exactement 5 chiffres.';
-                champ.parentNode.insertBefore(messageErreur, champ.nextSibling);
-                estValide = false; // Marquer comme non valide
-            }
-        }
     });
 
     // Affichage du message de succès si tout est valide
@@ -103,16 +82,10 @@ function resetForm() {
     document.getElementById('messageError').innerText = '';
     document.getElementById('successMessage').style.display = 'none'; // Cacher le message de succès
 
-    // Réinitialiser les messages d'erreur précédents
-    const previousErrorMessages = document.querySelectorAll('.erreur-message');
-    previousErrorMessages.forEach(msg => msg.remove());
-
-    // Réinitialiser les champs du formulaire
-    const champs = document.querySelectorAll('.sana input[type="text"], .sana input[type="email"], .sana input[type="tel"], .sana input[type="number"]');
-    champs.forEach(champ => {
-        champ.value = ''; // Effacer la valeur de chaque champ
-    });
-
     // Réinitialiser le total
     document.getElementById('total').value = 0; // Réinitialiser le total à 0
 }
+
+
+
+
