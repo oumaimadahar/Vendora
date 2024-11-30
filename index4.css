@@ -50,7 +50,7 @@ input[type="reset"]:hover,
 input[type="submit"]:hover {
     background-color: #b0741e; /* Couleur de fond au survol */
 }
-.erreur-vert {
+.erreur-rouge {
     color: red;
 }
 .succes-message {

@@ -15,12 +15,13 @@ function validerChamps(event) {
     const messageError = document.getElementById('messageError');
 
     // Réinitialiser les messages
-    messageSuccess.innerText = '';
-    messageError.innerText = '';
+    messageSuccess.innerText = '';//s'assure qu'aucun message de succès n'est visible au début de la validation du formulaire.
+    messageError.innerText = '';// Cela garantit qu'aucun message d'erreur précédent n'est affiché lorsque l'utilisateur commence à remplir le formulaire ou à le soumettre.
 
     // Réinitialiser les messages d'erreur précédents
     const previousErrorMessages = document.querySelectorAll('.erreur-message');
     previousErrorMessages.forEach(msg => msg.remove());
+    
 
     let estValide = true; // Variable pour vérifier la validité du formulaire
 
@@ -30,7 +31,7 @@ function validerChamps(event) {
         // Vérification des champs vides
         if (champ.value.trim() === '') {
             const messageErreur = document.createElement('div');
-            messageErreur.className = 'erreur-message erreur-vert'; // Ajouter la classe pour afficher en vert
+            messageErreur.className = 'erreur-message erreur-rouge'; // Ajouter la classe pour afficher en rouge
             messageErreur.innerText = champLabel + ' n\'est pas rempli.';
             champ.parentNode.insertBefore(messageErreur, champ.nextSibling); // Afficher le message d'erreur à côté du champ
             estValide = false; // Marquer comme non valide
