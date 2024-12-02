@@ -31,7 +31,7 @@ function validerChamps(event) {
         // Vérification des champs vides
         if (champ.value.trim() === '') {
             const messageErreur = document.createElement('div');
-            messageErreur.className = 'erreur-message erreur-rouge'; // Ajouter la classe pour afficher en rouge
+            messageErreur.className = 'erreur-message'; // Ajouter la classe pour afficher en rouge
             messageErreur.innerText = champLabel + ' n\'est pas rempli.';
             champ.parentNode.insertBefore(messageErreur, champ.nextSibling); // Afficher le message d'erreur à côté du champ
             estValide = false; // Marquer comme non valide
@@ -42,7 +42,7 @@ function validerChamps(event) {
     // Affichage du message de succès si tout est valide
     if (estValide) {
         messageSuccess.innerText = 'Votre commande a bien été réussie !'; // Afficher le message de succès
-        messageSuccess.classList.add('succes-message'); // Ajouter une classe pour afficher en rouge
+        messageSuccess.classList.add('succes-message'); // Ajouter une classe pour afficher en verte
     }
 }
 document.getElementById('tele').addEventListener('input', function() {
@@ -79,14 +79,9 @@ document.getElementById('codePostal').addEventListener('input', function() {
 // ////////////////////////////
 function resetForm() {
     // Réinitialiser les messages de succès et d'erreur
-    document.getElementById('messageSuccess').innerText = '';
-    document.getElementById('messageError').innerText = '';
     document.getElementById('successMessage').style.display = 'none'; // Cacher le message de succès
 
     // Réinitialiser le total
     document.getElementById('total').value = 0; // Réinitialiser le total à 0
 }
-
-
-
-
+///////////////
